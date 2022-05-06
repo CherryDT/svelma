@@ -9,7 +9,8 @@ import css from 'rollup-plugin-css-only'
 
 const production = !process.env.ROLLUP_WATCH
 
-const { name } = pkg
+// const { name } = pkg
+const name = 'svelma'
 
 export default {
 	input: 'src/index.js',
