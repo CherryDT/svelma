@@ -219,7 +219,7 @@
 {#if active}
   <div class="modal dialog {size} is-active" bind:this={modal}>
     <div class="modal-background" on:click={close}></div>
-    <div class="modal-card" transition:_animation={animProps}>
+    <div class="modal-card" transition:_animation|global={animProps}>
       {#if title}
         <header class="modal-card-head">
           <p class="modal-card-title">{title}</p>

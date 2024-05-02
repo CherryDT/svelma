@@ -44,14 +44,14 @@
     <div class="media-left">
       <figure class="image is-64x64">
         {#if user}
-          <img transition:fade class="is-rounded" src={user.picture.medium} alt="Profile picture" />
+          <img transition:fade|global class="is-rounded" src={user.picture.medium} alt="Profile picture" />
         {/if}
       </figure>
     </div>
     <div class="media-content">
       <div class="content">
         {#if user}
-          <p transition:fade>
+          <p transition:fade|global>
             <strong>{titleize(user.name.first)} {titleize(user.name.last)}</strong>
             <small>@{user.login.username}</small>
             <small />
@@ -62,7 +62,7 @@
         {/if}
       </div>
       {#if user}
-        <nav class="level is-mobile" transition:fade>
+        <nav class="level is-mobile" transition:fade|global>
           <div class="level-left">
             <a href class="level-item" aria-label="reply">
               <span class="icon is-small">
@@ -96,14 +96,14 @@
         <div class="media-left">
           <figure class="image is-64x64">
             {#if user}
-              <img transition:fade class="is-rounded" src={user.picture.medium} alt="Profile" />
+              <img transition:fade|global class="is-rounded" src={user.picture.medium} alt="Profile" />
             {/if}
           </figure>
         </div>
         <div class="media-content">
           <div class="content">
             {#if user}
-              <p transition:fade>
+              <p transition:fade|global>
                 <strong>{titleize(user.name.first)} {titleize(user.name.last)}</strong>
                 <small>@{user.login.username}</small>
                 <small />
@@ -114,7 +114,7 @@
             {/if}
           </div>
           {#if user}
-            <nav class="level is-mobile" transition:fade>
+            <nav class="level is-mobile" transition:fade|global>
               <div class="level-left">
                 <a href class="level-item" aria-label="reply">
                   <span class="icon is-small">

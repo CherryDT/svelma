@@ -40,7 +40,7 @@
 <br />
 
 {#if type}
-  <section class="hero {type}" transition:slide>
+  <section class="hero {type}" transition:slide|global>
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
@@ -60,7 +60,7 @@
     <br />
 
     {#if type}
-      <section class="hero {type}" transition:slide>
+      <section class="hero {type}" transition:slide|global>
         <div class="hero-body">
           <div class="container">
             <h1 class="title">

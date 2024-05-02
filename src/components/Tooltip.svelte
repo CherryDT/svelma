@@ -203,7 +203,7 @@
   </div>
   {#if always || (active && hovering)}
     <div
-      transition:fly={animationProps}
+      transition:fly|global={animationProps}
       class="tooltip tag {type}
       {size}
       {position}"

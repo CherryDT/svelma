@@ -108,8 +108,8 @@
   <div
     class="notice {position}"
     aria-hidden={!active}
-    in:fly={{ y: transitionY }}
-    out:fade={{ duration: transitionOut ? 400 : 0 }}
+    in:fly|global={{ y: transitionY }}
+    out:fade|global={{ duration: transitionOut ? 400 : 0 }}
     on:outroend={remove}
     bind:this={el}>
 
